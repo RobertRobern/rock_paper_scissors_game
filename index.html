@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Rock Paper Scissors Game</title>
+</head>
+<body>
+
+    <header id="header">
+        <div class="logo">
+            <img src="./assets/logo-clear.svg" alt="" class="logo">
+        </div>
+        <div class="heading">
+                <h4>ROCK PAPER SCISSOR</h4>
+        </div>
+    </header>
+
+    <div id="body" class="body-container">
+        <div class="controls">
+            <input type="button" value="Play" class="play button" >
+            <input type="button" value="Pause" class="pause button">
+            <input type="button" value="Mode" class="mode-selector button">
+            <input type="button" value="Stop" class="stop button">
+        </div>
+        <div class="instruction">
+            <span id="message"><strong>Mode</strong> to select Player and <strong>Play</strong> to start the game.</span>            
+        </div>
+        <div class="mode">
+            <div id="player">
+                <h3>Player #1</h3>
+                <div class="mode button-medium">
+                    <p class="mode-one-display">Mode</p>
+                </div>
+            </div>
+            <div id="player">
+                <h3>Player #2</h3>
+                <div class="mode button-medium">
+                    <p class="mode-two-display">Mode</p>
+                </div>
+            </div>            
+
+        </div>
+        <div class="score">
+            <div class="score-one">
+                <div class="outer-box">
+                    <div class="inner-box">
+                        <!-- <input type="text" name="display-one" id="display-two" value="0" readonly> -->
+                        <p id="display-one">0</p> 
+                    </div>
+                </div>                
+            </div>
+            <div class="versus">
+                <img src="./assets/VS.svg" alt="image" srcset="">
+            </div>
+            <div class="score-two">
+                <div class="outer-box">
+                    <div class="inner-box">
+                        <p id="display-two">0</p>                        
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <div class="game-icons">
+            <div class="rock icon-button">
+                <div class="rock-group">
+                    <img class="image-rock" id="image-icon" src="./assets/rock.svg" alt="Rock" srcset="">
+                    <img class="image-rock-girl" src="./assets/rock-girl.svg" alt="Rock" srcset="">
+                </div>
+                <div class="text">Rock</div>
+            </div>
+            <div class="scissor icon-button">
+                <div class="scissor-group"> 
+                    <img class="image-scissor" id="image-icon" src="./assets/scissor.svg" alt="Scissor" srcset="">
+                    <img class="image-scissor-boy" src="./assets/scissor-boy.svg" alt="Scissor" srcset="">
+                </div>
+                <div class="text">Scissor</div>
+            </div>
+            <div class="paper icon-button">
+                <div class="paper-group">
+                    <img class="image-paper" id="image-icon" src="./assets/paper.svg" alt="Paper" srcset="">
+                    <img class="image-paper-girl" src="./assets/paper-girl.svg" alt="Paper" srcset="">
+                </div>
+                <div class="text">Paper</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="alert hidden">
+        <div id="end-game"></div>
+        <input type="button" value="Try Again" class="replay button" >
+    </div>
+    
+
+    <footer id="footer">
+        <div class="copyright">
+            <h4>© Copyright 2022 RobertRobern</h4>
+            <img src="./assets/github-b.svg" alt="image" srcset="">
+            
+        </div>
+    </footer>
+    
+    <!-- Scripts -->
+    <noscript>Your browser does not support JavaScript!</noscript>
+    <script type="text/javascript" src="./script.js"></script>
+    <!-- <script src="./test.js"></script> -->
+
+    <!-- Scripts -->
+</body>
+</html>

@@ -1,0 +1,18 @@
+<svg id="rock" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="198" viewBox="0 0 200 198">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0.03" stop-color="#4b67d8"/>
+      <stop offset="0.22" stop-color="#4e65d9"/>
+      <stop offset="0.37" stop-color="#5860db"/>
+      <stop offset="0.5" stop-color="#6856de"/>
+      <stop offset="0.62" stop-color="#7f49e3"/>
+      <stop offset="0.74" stop-color="#9d38ea"/>
+      <stop offset="0.85" stop-color="#c223f2"/>
+      <stop offset="0.96" stop-color="#ed0bfb"/>
+      <stop offset="1" stop-color="#f0f"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_14" data-name="Group 14" opacity="0.85">
+    <path id="Path_31" data-name="Path 31" d="M306.23,201.138c4.495,11.152-19.1,22.565-25.17,34.419-5.15,10.063,4.978,34.092-5.173,42.39-9.364,7.651-32.346-5.883-43.987-1.441-11.787,4.508-20.361,29.679-32.548,29.227-10.832-.4-18.379-25.576-29.653-29.157s-32.23,12.589-41.373,6.776c-10.993-6.986-2.12-29.948-6.128-38.761-4.528-9.972-22.612-24.138-12.244-34.312,8.165-8.015,33.2-2.677,37.717-11.133,5.27-9.872-13.5-28.466-10.817-37.629,3.333-11.4,28.035-13.476,31.784-21.37,4.611-9.711.607-32.5,14.087-32.408,13.6.092,22.293,24.859,33.814,28.587,12.132,3.923,34.661-10.185,44.635-1.857,9.053,7.56-.652,32.261,6.742,43.754C274.157,187.917,301.1,188.446,306.23,201.138Z" transform="translate(-106.795 -107.739)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

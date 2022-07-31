@@ -1,0 +1,379 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: red; */
+}
+
+#header {
+    display: flex;
+    height: 75px;
+    width: auto;
+    background-color: #0f152e;
+    align-items: center;
+}
+#header h4{
+    margin: 0;
+}
+
+.logo {
+    /* background-color: aqua; */
+    margin-left: 40px;
+    flex: 1;
+
+}
+
+.logo img {
+    height: 41px;
+}
+
+.heading {
+    color: white;
+    font-size: 30px;
+    flex: 2;
+
+}
+
+.controls {
+    display: flex;
+    max-height: 50px;
+    margin: 10px 0;
+    /* background-color: aqua; */
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    height: 40px;
+    width: 96px;
+    color: white;
+    background-image: linear-gradient(#4b67d8, #5085d5);
+    border-radius: 76px;
+    border: none;
+    margin-right: 25px;
+    margin-left: 25px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.button:hover{
+    background-image: linear-gradient(10deg, #4b67d8, #F108FC 100%);
+}
+
+.play:active{
+    background-image: linear-gradient(10deg, #4b67d8, #F108FC 100%);
+}
+
+.mode {
+    display: flex;
+    max-height: 200px;
+    margin: 5px 0;
+    /* background-color: burlywood; */
+    align-items: center;
+    justify-content: center;
+}
+
+.instruction{
+    max-height: 20px;
+    margin: 0.4em;
+    text-align: center;
+    color: #0f152e;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+h3{
+    margin: 0;
+    color: #0f152e;
+    font-size: 20px;
+    font-weight: 700;
+}
+#player{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-medium {
+    height: 40px;
+    width: 123px;
+    color: white;
+    background-image: linear-gradient(#4b67d8, #5085d5);
+    border-radius: 76px;
+    border: none;
+    margin-right: 158px;
+    margin-left: 158px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.score {
+    display: flex;
+    max-height: 180px;
+    margin: 5px 0;
+    /* background-color: rgb(196, 142, 71); */
+    align-items: center;
+    justify-content: center;
+
+}
+
+.score-one {
+    display: flex;
+    height: 150px;
+    width: 150px;
+    /* background-color: aqua; */
+    align-items: center;
+    justify-content: center;
+    margin-right: 32px;
+    margin-left: 32px;
+}
+
+.score-one .outer-box {
+    display: flex;
+    height: 150px;
+    width: 150px;
+    background-image: linear-gradient(#4b67d8, #F108FC);
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.score-one .inner-box {
+    display: flex;
+    height: 135px;
+    width: 135px;
+    background-color: #de32e7;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.score-two {
+    display: flex;
+    height: 150px;
+    width: 150px;
+    /* background-color: aqua; */
+    align-items: center;
+    justify-content: center;
+    margin-right: 32px;
+    margin-left: 32px;
+}
+
+.score-two .outer-box {
+    display: flex;
+    height: 150px;
+    width: 150px;
+    background-image: linear-gradient(#0f152e, #5085d5);
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.score-two .inner-box {
+    display: flex;
+    height: 135px;
+    width: 135px;
+    background-color: #de32e7;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner-box p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 70px;
+    font-style: italic;
+    color: white;
+    text-align: center;
+}
+
+.versus img {
+    height: 121px;
+    width: 132px;
+    margin-right: 32px;
+    margin-left: 32px;
+}
+
+.game-icons {
+    display: flex;
+    /* background-color: aqua; */
+    height: 204px;
+    align-items: center;
+    justify-content: center;
+    /* pointer-events: none; */
+}
+
+#image-icon {
+    height: 180px;
+}
+
+.game-icons .text {
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+
+
+
+/* Rock Group */
+.rock .rock-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rock .text {
+    position: relative;
+    bottom: 40px;
+    left: 32px;
+    z-index: 1;
+
+}
+
+.image-rock {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+    cursor: pointer;
+
+}
+
+.image-rock-girl {
+    position: relative;
+    top: 12px;
+    right: 130px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+/* Rock Group */
+
+/* Scissor Group */
+.scissor .scissor-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scissor .text {
+    position: relative;
+    bottom: 40px;
+    left: 28px;
+    z-index: 1;
+
+}
+
+.image-scissor {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+    cursor: pointer;
+
+}
+
+.image-scissor-boy {
+    position: relative;
+    top: 12px;
+    right: 130px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+/* Scissor Group */
+
+
+/* Paper Group */
+.paper .paper-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.paper .text {
+    position: relative;
+    bottom: 40px;
+    left: 28px;
+    z-index: 1;
+
+}
+
+.image-paper {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+    cursor: pointer;
+
+}
+
+.image-paper-girl {
+    position: relative;
+    top: 6px;
+    right: 143px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+/* Paper Group */
+
+#footer {
+    height: 67px;
+    width: auto;
+    background-color: #0f152e;
+
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyright h4 {
+    color: white;
+    font-size: 18px;
+}
+
+.copyright img {
+    height: 27px;
+    width: 32px;
+    margin-left: 28px;
+}
+.alert{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 78vh;
+    gap: 20px;
+}
+
+#end-game{
+    color: #0f152e;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.alert input{
+    height: 40px;
+    width: 120px;
+    color: white;
+    background-image: linear-gradient(#4b67d8, #5085d5);
+    border-radius: 76px;
+    border: none;
+    margin-right: 25px;
+    margin-left: 25px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.hidden{
+    display: none;
+}
