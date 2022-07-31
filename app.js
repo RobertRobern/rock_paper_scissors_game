@@ -209,53 +209,6 @@ function resultsDisplay(text){
   contentStyle(message);
 }
 
-// function game(){
-  
-//   // for(let count = 1; count < 5; count++){
-//     // var firstSelection = prompt("Chooce between Rock, Paper, Scissor to play the Rock-Paper-Game");  
-
-//     // let newMessage = playRound(firstSelection,secondSelection);
-    
-//     // if(message.slice(0,7) === "You Win"){
-//     //   console.log(message.slice(0,7));
-//     //   playerScore++;
-//     //   playerDisplayOne.innerText = playerScore;        
-      
-//     // }else if(message.slice(0,8) === "You Lose"){
-//     //   console.log(message.slice(0,8));
-//     //   computerScore++;
-//     //   playerDisplayTwo.innerText = computerScore;
-      
-//     // }
-
-//     var count = 0;
-//     if(count < 5){
-//       const secondSelection = computerPlay();
-//       const newMessage = playRound(firstSelection,secondSelection);
-//       console.log(newMessage)
-
-//       if(message.contains = "You Win"){
-//         console.log("You Win");
-//         playerScore++;
-//         console.log(playerScore);
-//         playerDisplayOne.innerText = playerScore;      
-        
-//       }else if(message.contains = "You Lose"){
-//         console.log("You Lose");
-//         computerScore++;
-//         playerDisplayTwo.innerText = computerScore;
-//         console.log(computerScore);
-        
-//       }
-
-//       count++;
-//     }
-    
-//   // }
-
-    
-// }
-
 function winner(){
   alert.classList.remove("hidden");
   container.classList.add('hidden');
