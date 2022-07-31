@@ -4,4 +4,4 @@
 3. The person that plays the strongest “object” is the winner of the game. 
 It's that easy! Rock, Paper, Scissors is a simple game that anybody can play and win. 
 
-#_Still in Progress
+_Still in Progress
