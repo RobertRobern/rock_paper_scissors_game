@@ -75,12 +75,33 @@ body {
 }
 
 .instruction{
-    max-height: 20px;
+    max-height: 22px;
     margin: 0.4em;
     text-align: center;
     color: #0f152e;
     font-size: 20px;
     font-weight: 700;
+    overflow: hidden;
+}
+
+.instruction span{
+    
+    animation-duration: 3s;
+    animation-name: slideIn;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+        
+}
+
+@keyframes slideIn {
+    0% {
+        margin-left: 100%;
+        width: 100%;
+    }
+    100%{
+        margin-left: 0%;
+        width: 100%;
+    }
 }
 
 h3{
@@ -218,10 +239,26 @@ h3{
 
 
 /* Rock Group */
+.rock:hover{
+    filter: drop-shadow(3px 0 0 rgb(57, 91, 194))
+    drop-shadow(2px 0px 0 #ffffff)
+    drop-shadow(3px 0 0 #F108FC);
+    transition: filter 800ms ease;  
+}
+
+.image-rock-girl{
+    transition: transform 3s ease-in-out;
+}
+.image-rock-girl:hover{
+    transform: rotateY(40deg) rotateZ(4deg) ;
+        
+}
+
 .rock .rock-group {
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .rock .text {
@@ -229,7 +266,6 @@ h3{
     bottom: 40px;
     left: 32px;
     z-index: 1;
-
 }
 
 .image-rock {
@@ -246,12 +282,27 @@ h3{
     top: 12px;
     right: 130px;
     z-index: 1;
-    cursor: pointer;
+    cursor: pointer;    
 }
 
 /* Rock Group */
 
 /* Scissor Group */
+.scissor:hover{
+    filter: drop-shadow(3px 0 0 #0f152e)
+    drop-shadow(2px 0 0 #ffffff)
+    drop-shadow(3px 0 0 #638fd1);
+    transition: filter 800ms;    
+}
+
+.image-scissor-boy{
+    transition: transform 3s ease-in-out;
+}
+.image-scissor-boy:hover{
+    transform: rotateY(40deg) rotateZ(4deg) ;
+        
+}
+
 .scissor .scissor-group {
     display: flex;
     align-items: center;
@@ -287,6 +338,21 @@ h3{
 
 
 /* Paper Group */
+.paper:hover{    
+    filter: drop-shadow(3px 0 0 rgb(57, 91, 194))
+    drop-shadow(2px 0px 0 #ffffff)
+    drop-shadow(3px 0 0 #F108FC);
+    transition: filter 800ms;           
+}
+
+.image-paper-girl{
+    transition: transform 3s ease-in-out;
+}
+.image-paper-girl:hover{
+    transform: rotateY(40deg) rotateZ(4deg) ;
+        
+}
+
 .paper .paper-group {
     display: flex;
     align-items: center;
@@ -376,4 +442,53 @@ h3{
 
 .hidden{
     display: none;
+}
+
+.spin{
+    animation-name: spinner;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+}
+
+@keyframes spinner {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }    
+}
+
+.rotate{
+    animation-name: rotate;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }    
+}
+
+.textScale {
+    animation-name: textScale;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+    animation-delay: 200ms;
+}
+
+@keyframes textScale {
+    from {
+        left: 110px;
+    }
+    to {
+        left: 32px;
+    }    
 }
