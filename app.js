@@ -17,6 +17,14 @@ const iconBtns = document.querySelectorAll('.icon-button');
 const iconGame = document.querySelector('.game-icons');
 const playerDisplayOne = document.querySelector('#display-one')
 const playerDisplayTwo = document.querySelector('#display-two')
+const imageRock = document.querySelector('.image-rock');
+const imageScissor = document.querySelector('.image-scissor');
+const imagePaper = document.querySelector('.image-paper');
+const versus = document.querySelector('.versus img');
+// const versusSpinner = document.querySelector('.spin');
+// const imgRotate = document.querySelector('.rotate');
+const imgTexts = document.querySelector('.text');
+
 
 let randomNumber = 0;
 let firstSelection = "";
@@ -28,66 +36,32 @@ let secondPlayer = null;
 let tempArray = [];
 let newArray = [];
 
-play.addEventListener('click', () => {
-  isEnabled(iconGame);
-  isEnabled(pause);
-  isEnabled(stop);
-  isDisabled(mode);
-  // isDisabled(play);
-
-  if((displayModeOne.innerText == "A.I") && (displayModeTwo.innerText == "A.I")){
-    console.log("A-A");
-
-    for(let i = 0; i<=5; i++){
-      firstSelection = computerPlay();
-      secondSelection = computerPlay();
-      playRound(firstSelection,secondSelection);
-      break;
-    }
-  }  
-
-  if((playerScore === 5) || (computerScore === 5)){
-    
-    winner();
-  }
-
-});
-
-mode.addEventListener('click', () => {
-  modeSelector();
-});
-
-stop.addEventListener('click', () => {
-  resetGame();
-  isEnabled(mode);
-  isDisabled(pause);
-  // isEnabled(play);
-  isDisabled(iconGame);
-  isDisabled(stop);
-});
-
 iconBtns.forEach((iconBtn) => {
   iconBtn.addEventListener('click', () => {
     const img = iconBtn.querySelector('img');
+    firstSelection = img.alt;
+    secondSelection = computerPlay();
 
-    if((displayModeOne.innerText == "Human") && (displayModeTwo.innerText == "A.I")){
-      console.log("H-A");
-      firstSelection = img.alt;
-      secondSelection = computerPlay();
-      playRound(firstSelection,secondSelection);
-    }
-    
-    if((displayModeOne.innerText == "A.I") && (displayModeTwo.innerText == "Human")){
-      console.log("A-H");
-      firstSelection = computerPlay();
-      secondSelection = img.alt;
-      playRound(firstSelection,secondSelection);
-    }
+    let start = Date.now(); 
 
+    let timer = setInterval(function() {
+      // how much time passed from the start?
+      let timePassed = Date.now() - start;
 
-    // console.log(firstSelection,secondSelection);
-    // playRound(firstSelection,secondSelection);
-    
+      if (timePassed >= 2000) {
+        clearInterval(timer); // finish the animation after 2 seconds
+        return;
+      }
+
+      // draw the animation at the moment timePassed
+      animation(img.className);
+      // animation(imageRock);
+      // animation(imageScissor);
+
+    }, 20);
+
+    playRound(firstSelection, secondSelection);
+
     if((playerScore === 5) || (computerScore === 5)){
       winner();
     }
@@ -108,6 +82,13 @@ function isDisabled(element){
 
 function isEnabled(element){
   element.style.pointerEvents =  'all'
+}
+
+function futureWorks(){
+  play.classList.add('hidden');
+  mode.classList.add('hidden');
+  stop.classList.add('hidden');
+  pause.classList.add('hidden');
 }
 
 function contentStyle(element){
@@ -231,10 +212,30 @@ function resetGame(){
 
 }
 
-window.onload = modeSelector();
-window.onload = isDisabled(iconGame);
-window.onload = isDisabled(pause);
-window.onload = isDisabled(stop);
+let myInterval = setInterval(function() {
+
+});
+
+
+
+function animation(element){
+  versus.classList.add('spin');
+  element.classList.add('rotate');
+  // imagePaper.classList.add('rotate');
+  // imageScissor.classList.add('rotate');
+  // imgTexts.classList.add('textScale')
+  // imgTexts.forEach(imgText => imgText.classList.add('textScale'));
+   
+}
+
+
+// window.onload = modeSelector();
+// window.onload = isDisabled(iconGame);
+// window.onload = isDisabled(pause);
+window.onload = futureWorks();
+// window.onload = animation();
+// window.onload = isDisabled(stop);
+// window.onload = animation();
 
 
 
