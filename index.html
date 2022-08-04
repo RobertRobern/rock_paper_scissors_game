@@ -15,25 +15,28 @@
             <img src="./assets/logo-clear.svg" alt="" class="logo">
         </div>
         <div class="heading">
-                <h4>ROCK PAPER SCISSOR</h4>
+                <h4>ROCK PAPER SCISSOR GAME</h4>
         </div>
     </header>
 
     <div id="body" class="body-container">
-        <div class="controls">
+        <!-- <div class="controls">
             <input type="button" value="Play" class="play button" >
             <input type="button" value="Pause" class="pause button">
             <input type="button" value="Mode" class="mode-selector button">
             <input type="button" value="Stop" class="stop button">
-        </div>
+        </div> -->
         <div class="instruction">
-            <span id="message"><strong>Mode</strong> to select Player and <strong>Play</strong> to start the game.</span>            
+            <span id="topText">Play versus the Computer.</span>            
+        </div>
+        <div class="in-Text">
+            <span id="bottomText">Choose one of three animation.</span>            
         </div>
         <div class="mode">
             <div id="player">
                 <h3>Player #1</h3>
                 <div class="mode button-medium">
-                    <p class="mode-one-display">Human</p>
+                    <p class="mode-one-display">You</p>
                 </div>
             </div>
             <div id="player">
@@ -48,12 +51,11 @@
             <div class="score-one">
                 <div class="outer-box">
                     <div class="inner-box">
-                        <!-- <input type="text" name="display-one" id="display-two" value="0" readonly> -->
                         <p id="display-one">0</p> 
                     </div>
                 </div>                
             </div>
-            <div class="versus">
+            <div class="versus spin">
                 <img src="./assets/VS.svg" alt="image" srcset="">
             </div>
             <div class="score-two">
@@ -89,17 +91,17 @@
         </div>
     </div>
 
-    <div class="alert hidden">
+    <div class="endMsg hidden">
         <div id="end-game"></div>
         <input type="button" value="Try Again" class="replay button" >
-    </div>
-    
+    </div>    
 
     <footer id="footer">
         <div class="copyright">
             <h4>© Copyright 2022 RobertRobern</h4>
-            <img src="./assets/github-b.svg" alt="image" srcset="">
-            
+            <a href="https://github.com/RobertRobern/rock_paper_scissors_gam" target="_blank">
+                <img src="./assets/github-b.svg" alt="image" srcset="">
+            </a>        
         </div>
     </footer>
     
