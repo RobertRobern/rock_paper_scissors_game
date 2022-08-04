@@ -2,7 +2,6 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    /* background-color: red; */
 }
 
 #header {
@@ -17,7 +16,6 @@ body {
 }
 
 .logo {
-    /* background-color: aqua; */
     margin-left: 40px;
     flex: 1;
 
@@ -38,7 +36,6 @@ body {
     display: flex;
     max-height: 50px;
     margin: 10px 0;
-    /* background-color: aqua; */
     align-items: center;
     justify-content: center;
 }
@@ -69,7 +66,6 @@ body {
     display: flex;
     max-height: 200px;
     margin: 5px 0;
-    /* background-color: burlywood; */
     align-items: center;
     justify-content: center;
 }
@@ -113,7 +109,6 @@ h3{
     display: flex;
     max-height: 180px;
     margin: 5px 0;
-    /* background-color: rgb(196, 142, 71); */
     align-items: center;
     justify-content: center;
 
@@ -123,7 +118,6 @@ h3{
     display: flex;
     height: 150px;
     width: 150px;
-    /* background-color: aqua; */
     align-items: center;
     justify-content: center;
     margin-right: 32px;
@@ -154,7 +148,6 @@ h3{
     display: flex;
     height: 150px;
     width: 150px;
-    /* background-color: aqua; */
     align-items: center;
     justify-content: center;
     margin-right: 32px;
@@ -199,11 +192,9 @@ h3{
 
 .game-icons {
     display: flex;
-    /* background-color: aqua; */
     height: 204px;
     align-items: center;
     justify-content: center;
-    /* pointer-events: none; */
 }
 
 #image-icon {
