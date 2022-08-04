@@ -75,33 +75,13 @@ body {
 }
 
 .instruction{
-    max-height: 22px;
+    max-height: 24px;
     margin: 0.4em;
     text-align: center;
     color: #0f152e;
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 22px;
+    font-weight: bold;
     overflow: hidden;
-}
-
-.instruction span{
-    
-    animation-duration: 3s;
-    animation-name: slideIn;
-    animation-iteration-count: 1;
-    animation-direction: alternate;
-        
-}
-
-@keyframes slideIn {
-    0% {
-        margin-left: 100%;
-        width: 100%;
-    }
-    100%{
-        margin-left: 0%;
-        width: 100%;
-    }
 }
 
 h3{
@@ -409,7 +389,7 @@ h3{
     width: 32px;
     margin-left: 28px;
 }
-.alert{
+.endMsg{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -426,7 +406,7 @@ h3{
     font-weight: bolder;
 }
 
-.alert input{
+.endMsg input{
     height: 40px;
     width: 120px;
     color: white;
@@ -442,6 +422,16 @@ h3{
 
 .hidden{
     display: none;
+}
+
+.in-Text{
+    max-height: 24px;
+    margin: 0.4em;
+    text-align: center;
+    color: #0f152e;
+    font-size: 22px;
+    font-weight: 550;
+    overflow: hidden;
 }
 
 .spin{
@@ -464,7 +454,7 @@ h3{
     animation-name: rotate;
     animation-direction: alternate;
     animation-iteration-count: infinite;
-    animation-duration: 6s;
+    animation-duration: 300ms;
 }
 
 @keyframes rotate {
@@ -480,8 +470,8 @@ h3{
     animation-name: textScale;
     animation-direction: alternate;
     animation-iteration-count: infinite;
-    animation-duration: 6s;
-    animation-delay: 200ms;
+    animation-duration: 250ms;
+    animation-delay: 50ms;
 }
 
 @keyframes textScale {
@@ -491,4 +481,20 @@ h3{
     to {
         left: 32px;
     }    
+}
+
+.instruction{    
+    animation-duration: 1s;
+    animation-name: dropDown;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+@keyframes dropDown {
+    0% {
+        transform: translateY(-150%)
+    }
+    100%{
+        transform: translate(0%);
+    }
 }
